@@ -32,7 +32,7 @@ $data = [
 
 
 $f = fopen('task1.csv', 'w');
-
+fputcsv($f, array('Country name','Country code','Lat', 'Long'));
 foreach ($data as $row) {
     fputcsv($f, $row);
 }
